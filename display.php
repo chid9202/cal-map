@@ -9,16 +9,20 @@ try {
       die("Could not connect to the database $dbname :" . $pe->getMessage());
     }
   //$tag = $_GET['tag'];
-  $tag = "1";
-  $stmt = $dbh->prepare("SELECT tag, ip FROM pc WHERE tag = :tag");
-  $stmt->bindParam(':tag', $tag);
+  $room=$_GET['room'];
+  $stmt = $dbh->prepare("SELECT tag, hostname, ip FROM pc WHERE room = :room");
+  $stmt->bindParam(':room', $room);
   $stmt->execute() or exit("SELECT failed");
 
-  $row = $stmt->fetch() or exit("fetch failed.");
-  $response = $row["tag"];
+  $result = $stmt->fetch() or exit("fetch failed.");
 
-  echo $response;
-  print(json_encode($response));
+  $tag = $result['tag'];
+  $hostname = $result['hostname'];
+  $ip = $result['ip'];
+  while($result) {
+    echo $tag[]
+    echo '<br>';
+  }
 } catch (PDOException $e) {
   exit($e->getMessage());
 }
