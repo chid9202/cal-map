@@ -22,23 +22,14 @@ try {
     <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.13/js/jquery.dataTables.js"></script>
 
     <script type="text/javascript">
-      activate_bar("bar_uh0");
+      activate_bar("bar_va2");
     </script>
   <HEAD>
   <BODY>
     <div class="row">
       <div class="col col-sm-8">
-        <img src="./img/uh0-color.png" class="map" usemap="#uh0_map" />
-    			<map name="uh0_map">
-            <area href="maps_uh006.php" shape="rect" coords="65,465,152,563" id="006" class="room"/>
-            <area href="maps_uh009.php" shape="rect" coords="251,520,347,609" id="009" class="room" />
-            <area href="maps_uh047.php" shape="rect" coords="344,369,437,460" id="047" class="room"/>
-            <area href="maps_uh052.php" shape="rect" coords="277,336,341,442" id="052" class="room"/>
-            <area href="maps_uh037.php" shape="rect" coords="438,424,541,476" id="037" class="room"/>
-            <area href="maps_uh038.php" shape="rect" coords="545,277,443,416" id="038" class="room"/>
-            <area href="maps_uh043.php" shape="rect" coords="443,109,342,275" id="043" class="room"/>
-            <area href="maps_uh055.php" shape="poly" coords="251,234,341,234,342,111,293,119,249,133" id="055" class="room"/>
-            <area href="maps_uh054.php" shape="poly" coords="134,317,251,318,249,217,164,217,145,251" id="054" class="room"/>
+        <img src="./img/va2.jpg" class="map" usemap="#va1_map" />
+    			<map name="va2_map">
     			</map>
       </div>
       <div class="col col-sm-4">
